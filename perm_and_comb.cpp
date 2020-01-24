@@ -7,15 +7,15 @@ int permutation(int n, int r)
 	return 1;
 	else
 	return(n*permutation(n-1,r-1));
-  return 0;
+  
 }
 
-float combination(int n, int r)
+int combination(int n, int r)
 {
 	if(r==0)
 	return 1;
 	else 
-  return ((n*combination(n-1,r-1))/r);
+  return (((n*1.0)*combination(n-1,r-1))/r);
 }
 
 int main()
